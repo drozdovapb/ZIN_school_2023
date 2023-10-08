@@ -1,0 +1,3 @@
+
+wget https://zenodo.org/record/1134547/files/Barcode_SRR034310.txt
+wget https://zenodo.org/record/1134547/files/Details_Barcode_Population_SRR034310.txt

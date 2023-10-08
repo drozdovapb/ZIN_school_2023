@@ -1,0 +1,16 @@
+sample_CCCC	CCCC
+sample_CCAA	CCAA
+sample_CCTT	CCTT
+sample_CCGG	CCGG
+sample_CACA	CACA
+sample_CAAC	CAAC
+sample_CATG	CATG
+sample_CAGT	CAGT
+sample_CTCT	CTCT
+sample_CTAG	CTAG
+sample_CTTC	CTTC
+sample_CTGA	CTGA
+sample_GGGG	GGGG
+sample_GGAA	GGAA
+sample_GGTT	GGTT
+sample_GGCC	GGCC

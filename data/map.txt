@@ -1,0 +1,16 @@
+sample_CCCC	freshwater
+sample_CCAA	freshwater
+sample_CCTT	freshwater
+sample_CCGG	freshwater
+sample_CACA	freshwater
+sample_CAAC	freshwater
+sample_CATG	freshwater
+sample_CAGT	freshwater
+sample_CTCT	oceanic
+sample_CTAG	oceanic
+sample_CTTC	oceanic
+sample_CTGA	oceanic
+sample_GGGG	oceanic
+sample_GGAA	oceanic
+sample_GGTT	oceanic
+sample_GGCC	oceanic

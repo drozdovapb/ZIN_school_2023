@@ -1,0 +1,12 @@
+wget https://ftp.ensembl.org/pub/release-110/fasta/physeter_catodon/pep/Physeter_catodon.ASM283717v2.pep.all.fa.gz
+wget https://ftp.ensembl.org/pub/release-110/fasta/ovis_aries_rambouillet/pep/Ovis_aries_rambouillet.Oar_rambouillet_v1.0.pep.all.fa.gz
+wget https://ftp.ensembl.org/pub/release-110/fasta/equus_caballus/pep/Equus_caballus.EquCab3.0.pep.all.fa.gz
+wget https://ftp.ensembl.org/pub/release-110/fasta/felis_catus/pep/Felis_catus.Felis_catus_9.0.pep.all.fa.gz
+wget https://ftp.ensembl.org/pub/release-110/fasta/canis_lupus_familiaris/pep/Canis_lupus_familiaris.ROS_Cfam_1.0.pep.all.fa.gz
+wget https://ftp.ensembl.org/pub/release-110/fasta/myotis_lucifugus/pep/Myotis_lucifugus.Myoluc2.0.pep.all.fa.gz
+wget https://ftp.ensembl.org/pub/release-110/fasta/mus_spretus/pep/Mus_spretus.SPRET_EiJ_v1.pep.all.fa.gz
+wget https://ftp.ensembl.org/pub/release-110/fasta/mus_musculus/pep/Mus_musculus.GRCm39.pep.all.fa.gz
+wget https://ftp.ensembl.org/pub/release-110/fasta/marmota_marmota_marmota/pep/Marmota_marmota_marmota.marMar2.1.pep.all.fa.gz
+wget https://ftp.ensembl.org/pub/release-110/fasta/macaca_mulatta/pep/Macaca_mulatta.Mmul_10.pep.all.fa.gz
+wget https://ftp.ensembl.org/pub/release-110/fasta/ornithorhynchus_anatinus/pep/Ornithorhynchus_anatinus.mOrnAna1.p.v1.pep.all.fa.gz
+wget https://ftp.ensembl.org/pub/release-110/fasta/vombatus_ursinus/pep/Vombatus_ursinus.bare-nosed_wombat_genome_assembly.pep.all.fa.gz

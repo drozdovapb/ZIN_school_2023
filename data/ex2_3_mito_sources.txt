@@ -1,0 +1,12 @@
+esearch -email -db nuccore -query NC_002503 | efetch -format fasta_cds_aa > Physeter_catodon_mt_prot.fa 
+esearch -email  -db nuccore -query NC_001941 | efetch -format fasta_cds_aa > Ovis_aries_mt_prot.fa 
+esearch -email  -db nuccore -query NC_001640 | efetch -format fasta_cds_aa > Equus_caballus_mt_prot.fa 
+esearch -email  -db nuccore -query NC_001700 | efetch -format fasta_cds_aa > Felis_catus_mt_prot.fa 
+esearch -email  -db nuccore -query NC_002008 | efetch -format fasta_cds_aa > Canis_lupus_familiaris_mt_prot.fa 
+esearch -email  -db nuccore -query NC_029849 | efetch -format fasta_cds_aa > Myotis_lucifugus_mt_prot.fa 
+esearch -email  -db nuccore -query NC_025952 | efetch -format fasta_cds_aa > Mus_spretus_mt_prot.fa  
+esearch -email  -db nuccore -query NC_005089 | efetch -format fasta_cds_aa > Mus_musculus_mt_prot.fa  
+esearch -email  -db nuccore -query MN935776 | efetch -format fasta_cds_aa > Marmota_marmota_mt_prot.fa  
+esearch -email  -db nuccore -query NC_005943 | efetch -format fasta_cds_aa > Macaca_mulatta_mt_prot.fa  
+esearch -email  -db nuccore -query NC_000891 | efetch -format fasta_cds_aa > Ornithorhynchus_anatinus_mt_prot.fa  
+esearch -email -db nuccore -query NC_003322 | efetch -format fasta_cds_aa > Vombatus_ursinus_mt_prot.fa  
