@@ -3,6 +3,9 @@
 
 #In the manuscript, they have pieces of several mt genes. Let's see if it reproduces by cytb only
 
+mkdir ex1_leopards_cytb
+cd ex1_leopards_cytb
+
 #- Get data
 efetch -db popset -id 126256205 -format fasta >felidae_cytb.fa
 # Rename

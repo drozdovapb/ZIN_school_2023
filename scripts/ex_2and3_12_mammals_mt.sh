@@ -1,3 +1,6 @@
+mkdir ex2_3_12mammals_mt
+cd ex2_3_12mammals_mt
+
 ## fully automated download: yes, it works, but it's too long
 #esearch -email  -db nuccore -query "Felis catus mitochondrial genome" | efetch -format fasta_cds_na 
 #esearch -email  -db nuccore -query "cat mitochondrial genome" | efetch -format fasta_cds_na 
@@ -67,5 +70,3 @@ export gene=CYTB; ./one_gene_tree.sh
 
 for file in *aln; do cut -d_ -f1,2 $file >mt_proteins_alns/$file; done
 iqtree2 -s mt_proteins_alns -alrt 1000 -abayes -o Ornithorhynchus_anatinus,Vombatus_ursinus --redo
-
-

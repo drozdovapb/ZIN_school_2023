@@ -13,14 +13,19 @@
 #wget https://ftp.ensembl.org/pub/release-110/fasta/ornithorhynchus_anatinus/pep/Ornithorhynchus_anatinus.mOrnAna1.p.v1.pep.all.fa.gz
 #wget https://ftp.ensembl.org/pub/release-110/fasta/vombatus_ursinus/pep/Vombatus_ursinus.bare-nosed_wombat_genome_assembly.pep.all.fa.gz
 
+mkdir 1_pep_all/
+cd 1_pep_all
 
-# fulll set of single copy orthologs
+cp /home/zin_data/*all.fa.gz 1_pep_all/
+
+# full set of single copy orthologs
 ## proteinortho has trouble with long names
-for file in ../1_pep_all/*fa; do sed -e's/\ .*//' $file >$file.clean.fa; done
+for file in ./1_pep_all/*fa; do sed -e's/\ .*//' $file >$file.clean.fa; done
 mkdir 2_pep_renamed
-mv ../1_pep_all/*clean* 2_pep_renamed/ 
-proteinortho 2_pep_renamed/*fa
-## proteinortho runs for around 3h
+mv ./1_pep_all/*clean* 2_pep_renamed/ 
+## long command!!!
+proteinortho 2_pep_renamed/*fa -t 12
+## proteinortho runs for around 3h at one processor
 
 grep -v  \* myproject.proteinortho.tsv  | grep -v -c "," 
 #686 genes
@@ -50,4 +55,5 @@ rm families_alns/family79.names.txt.fa.aln
 mkdfir families_trimmed_alns/
 cd families_alns/
 for file in *aln; do in trimal -in $file -out ../families_trimmed_alns/$file -automated1 
-iqtree2 -s families_trimmed_alns/ -alrt 1000 -abayes -o Ornithorhynchus_anatinus,Vombatus_ursinus --redo
+## long command!!!
+iqtree2 -s families_trimmed_alns/ -alrt 1000 -abayes -o Ornithorhynchus_anatinus,Vombatus_ursinus -nt 12

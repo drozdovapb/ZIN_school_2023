@@ -16,7 +16,9 @@
 mkdir ex5_RADseq_stacks
 cd ex5_RADseq_stacks
 ## get example data
-wget fastq-dump -A SRR034310
+## get data from NCBI with SRA toolkit
+#fastq-dump -A SRR034310
+## there is also fasterq-dump
 wget https://zenodo.org/record/1134547/files/Barcode_SRR034310.txt
 wget https://zenodo.org/record/1134547/files/Details_Barcode_Population_SRR034310.txt
 ## demultiplexing
@@ -28,10 +30,12 @@ mv *fq reads/
 mkdir stacks_temp/
 
 cd reads/
+## long command!!!
 ustacks -f sample_CAAC.fq -o ../stacks_temp/ 
+## OR
+for file in *fq; do ustacks -f $file  -o ../stacks_temp/; done
 
 cd ../
-for file in *fq; do ustacks -f $file  -o ../stacks_temp/; done
 
 ## create file with a map
 #nano map.txt
