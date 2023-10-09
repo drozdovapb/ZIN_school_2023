@@ -13,7 +13,7 @@ cut -d ' ' -f 1,2,3 felidae_cytb.fa | sed -e 's/ /_/g' > felidae_cytb.renamed.fa
 # Align
 mafft --auto felidae_cytb.renamed.fa >felidae_cytb.aln
 # View alignment and trim
-alv cytb_arvicolinae.trim2.aln
+alv felidae_cytb.aln
 #trimal -in felidae_cytb.aln -out felidae_cytb.trim.aln -automated1`
 trimal -in felidae_cytb.aln -out felidae_cytb.trim.aln -nogaps
 # Build tree

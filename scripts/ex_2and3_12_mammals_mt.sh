@@ -26,16 +26,16 @@ done
 ## now add species names
 for file in *mt_prot.fa.renamed.fa
 do export species_name=$(basename $file _mt_prot.fa.renamed.fa)
-~/apt/bbmap/rename.sh in=$file prefix="$species_name" addprefix=true out=$species_name.mt_prots.fa ignorejunk=true
+rename.sh in=$file prefix="$species_name" addprefix=true out=$species_name.mt_prots.fa ignorejunk=true
 done
 
 ## CYTB
 grep CYTB *mt_prots.fa --no-filename | cut -c2- >cytb_names.txt
 for file in *.mt_prots.fa
-do ~/apt/bbmap/filterbyname.sh in=$file out=$file.CYTB.aa.fa include=t names=cytb_names.txt overwrite=true ignorejunk=true
+do filterbyname.sh in=$file out=$file.CYTB.aa.fa include=t names=cytb_names.txt overwrite=true ignorejunk=true
 done
 
-## finally we have multifast
+## finally we have multifasta
 cat *CYTB.aa.fa > CYTB.aa.fa
 ## align
 mafft --auto CYTB.aa.fa >CYTB.aa.aln
@@ -51,7 +51,8 @@ cat one_gene_tree.sh
 #for file in *.mt_prots.fa; do ~/apt/bbmap/filterbyname.sh in=$file out=$file.$gene.aa.fa include=t names=$gene_names.txt overwrite=true ignorejunk=true; done
 #cat *$gene.aa.fa > $gene.aa.fa
 #mafft --auto $gene.aa.fa >$gene.aa.aln
-i#qtree2 -s $gene.aa.aln -alrt 1000 -abayes -o Ornithorhynchus_anatinus_$gene,Vombatus_ursinus_$gene --redo
+
+iqtree2 -s $gene.aa.aln -alrt 1000 -abayes -o Ornithorhynchus_anatinus_$gene,Vombatus_ursinus_$gene --redo
 
 ## run through each protein
 export gene=COX1; ./one_gene_tree.sh

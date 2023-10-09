@@ -1,4 +1,7 @@
 
+mkdir ex4_sco
+cd ex4_sco
+
 ## data
 #wget https://ftp.ensembl.org/pub/release-110/fasta/physeter_catodon/pep/Physeter_catodon.ASM283717v2.pep.all.fa.gz
 #wget https://ftp.ensembl.org/pub/release-110/fasta/ovis_aries_rambouillet/pep/Ovis_aries_rambouillet.Oar_rambouillet_v1.0.pep.all.fa.gz
@@ -18,6 +21,7 @@ cd 1_pep_all
 
 cp /home/zin_data/*all.fa.gz 1_pep_all/
 
+gunzip 1_pep_all/*fa.gz
 # full set of single copy orthologs
 ## proteinortho has trouble with long names
 for file in ./1_pep_all/*fa; do sed -e's/\ .*//' $file >$file.clean.fa; done
