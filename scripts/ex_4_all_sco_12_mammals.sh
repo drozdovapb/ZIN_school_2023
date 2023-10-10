@@ -2,6 +2,11 @@
 mkdir ex4_sco
 cd ex4_sco
 
+## important note:
+## this script needs proteinortho=6.0.33 to function
+## (not all versions tested, but 6.3.0 doesn't work)
+## conda install -c bioconda proteinortho=6.0.33
+
 ## data
 #wget https://ftp.ensembl.org/pub/release-110/fasta/physeter_catodon/pep/Physeter_catodon.ASM283717v2.pep.all.fa.gz
 #wget https://ftp.ensembl.org/pub/release-110/fasta/ovis_aries_rambouillet/pep/Ovis_aries_rambouillet.Oar_rambouillet_v1.0.pep.all.fa.gz
@@ -28,7 +33,7 @@ for file in ./1_pep_all/*fa; do sed -e's/\ .*//' $file >$file.clean.fa; done
 mkdir 2_pep_renamed
 mv ./1_pep_all/*clean* 2_pep_renamed/ 
 ## long command!!!
-proteinortho 2_pep_renamed/*fa -t 12
+proteinortho 2_pep_renamed/*fa -cpus=12
 ## proteinortho runs for around 3h at one processor
 
 grep -v  \* myproject.proteinortho.tsv  | grep -v -c "," 
@@ -56,8 +61,9 @@ rm families_alns/family79.names.txt.fa.aln
 #iqtree2 -s families_alns/ -alrt 1000 -abayes -o Ornithorhynchus_anatinus,Vombatus_ursinus --redo
 
 ## we can also trim 
-mkdfir families_trimmed_alns/
+mkdir families_trimmed_alns/
 cd families_alns/
-for file in *aln; do in trimal -in $file -out ../families_trimmed_alns/$file -automated1 
+for file in *aln; do trimal -in $file -out ../families_trimmed_alns/$file -automated1 
 ## long command!!!
+cd ../
 iqtree2 -s families_trimmed_alns/ -alrt 1000 -abayes -o Ornithorhynchus_anatinus,Vombatus_ursinus -nt 12
