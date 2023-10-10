@@ -17,7 +17,7 @@ mkdir ex5_RADseq_stacks
 cd ex5_RADseq_stacks
 ## get example data
 ## get data from NCBI with SRA toolkit
-#fastq-dump -A SRR034310
+cp 
 ## there is also fasterq-dump
 wget https://zenodo.org/record/1134547/files/Barcode_SRR034310.txt
 wget https://zenodo.org/record/1134547/files/Details_Barcode_Population_SRR034310.txt
@@ -82,6 +82,6 @@ nano map_all_diff.txt
 #sample_GGCC	GGCC
 
 
-populations -P 2_ustacks/ -M map_all_diff.txt -r 1  --phylip 
-sed '18d' 2_ustacks/populations.fixed.phylip >populations.fixed.phylip
-iqtree2 -s populations.fixed.phylip -bb 1000 
+populations -P stacks_temp/ -M map_all_diff.txt -r 1  --phylip 
+sed '18d' stacks_temp/populations.fixed.phylip >populations.fixed.phylip
+iqtree2 -s populations.fixed.phylip -bb 1000 -abayes
