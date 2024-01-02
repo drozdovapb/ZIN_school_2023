@@ -17,7 +17,8 @@ mkdir ex5_RADseq_stacks
 cd ex5_RADseq_stacks
 ## get example data
 ## get data from NCBI with SRA toolkit
-cp 
+## fastq-dump -A SRR034310 
+cp /home/zin_data/SRR034310.fastq.gz .
 ## there is also fasterq-dump
 wget https://zenodo.org/record/1134547/files/Barcode_SRR034310.txt
 wget https://zenodo.org/record/1134547/files/Details_Barcode_Population_SRR034310.txt

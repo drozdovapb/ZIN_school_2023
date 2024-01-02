@@ -2,6 +2,7 @@
 
 mkdir ex6_FFP/; mkdir ex6_FFP/FFP
 cd 1_pep_all
+## long command
 for file in *fa; do FFP_compress -a -s 13 -n $file ../ex6_FFP/FFP/$file; done
 cd ../ex6_FFP/
 JSD_matrix -s -t 1 ./FFP/* > 12_items_s13.matrix

@@ -1,6 +1,6 @@
 
 mkdir ex4_sco
-cd ex4_sco
+cd ex4_sco/
 
 ## important note:
 ## this script needs proteinortho=6.0.33 to function
@@ -36,8 +36,27 @@ mv ./1_pep_all/*clean* 2_pep_renamed/
 proteinortho 2_pep_renamed/*fa -cpus=12
 ## proteinortho runs for around 3h at one processor
 
+## let's check how many SCOs we got
 grep -v  \* myproject.proteinortho.tsv  | grep -v -c "," 
 #686 genes
+
+grep -v  \* myproject.proteinortho.tsv  | grep -v "," >myproject.proteinortho.filt.tsv
+
+## here's a small R script to 
+cat write_family_names.R
+### read the proteinortho table
+#onetoone <- read.delim("myproject.proteinortho.filt.tsv")
+#     ## write name lists to later extract
+#   for (i in 4:ncol(onetoone)) {
+#   writeLines(onetoone[,i], paste0(names(onetoone[i]), ".names.txt"))
+#   }
+#   dir.create("families_tree")  
+#   ## and gene lists grouped by families
+#   for (i in 1:nrow(onetoone)) {
+#   oo <- as.matrix(onetoone)
+#   writeLines(oo[i, 4:ncol(onetoone)], paste0("families_tree/family", as.character(i), ".names.txt"))
+#   }
+Rscript ./write_family_names.R
 
 cat 2_pep_renamed/*fa >all_pep.fa
 
