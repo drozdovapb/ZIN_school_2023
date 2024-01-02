@@ -1,0 +1,186 @@
+IQ-TREE 2.0.7 built Jan 21 2022
+
+Input file name: families_trimmed_alns
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 132924
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 12 sequences with 247899 amino-acid sites
+Number of constant sites: 151709 (= 61.1979% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 151709 (= 61.1979% of all sites)
+Number of parsimony informative sites: 46079
+Number of distinct site patterns: 53028
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: JTT+F+R4
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+JTT+F+R4        -1807658.672 3615409.344 +        1 3615409.361 +        1 3615888.700 +        1
+JTTDCMut+F+R4   -1808425.834 3616943.668 -        0 3616943.685 -        0 3617423.024 -        0
+JTT+R4          -1811788.030 3623630.060 -        0 3623630.066 -        0 3623911.421 -        0
+JTTDCMut+R4     -1812641.354 3625336.708 -        0 3625336.714 -        0 3625618.069 -        0
+HIVb+F+R4       -1815289.047 3630670.094 -        0 3630670.111 -        0 3631149.450 -        0
+mtMet+F+R4      -1821132.728 3642357.456 -        0 3642357.473 -        0 3642836.812 -        0
+FLU+F+R4        -1821960.139 3644012.278 -        0 3644012.295 -        0 3644491.634 -        0
+mtVer+F+R4      -1822943.644 3645979.288 -        0 3645979.305 -        0 3646458.644 -        0
+mtInv+F+R4      -1828290.821 3656673.642 -        0 3656673.659 -        0 3657152.998 -        0
+HIVb+R4         -1830367.102 3660788.204 -        0 3660788.210 -        0 3661069.565 -        0
+WAG+F+R4        -1831524.898 3663141.796 -        0 3663141.813 -        0 3663621.152 -        0
+VT+F+R4         -1833100.040 3666292.080 -        0 3666292.097 -        0 3666771.436 -        0
+LG+F+R4         -1833941.797 3667975.594 -        0 3667975.611 -        0 3668454.950 -        0
+Dayhoff+F+R4    -1835056.953 3670205.906 -        0 3670205.923 -        0 3670685.262 -        0
+DCMut+F+R4      -1835217.365 3670526.730 -        0 3670526.747 -        0 3671006.086 -        0
+cpREV+F+R4      -1836007.455 3672106.910 -        0 3672106.927 -        0 3672586.266 -        0
+HIVw+F+R4       -1836125.177 3672342.354 -        0 3672342.371 -        0 3672821.710 -        0
+mtREV+F+R4      -1837626.753 3675345.506 -        0 3675345.523 -        0 3675824.862 -        0
+WAG+R4          -1838407.430 3676868.860 -        0 3676868.866 -        0 3677150.221 -        0
+VT+R4           -1839745.647 3679545.294 -        0 3679545.300 -        0 3679826.655 -        0
+LG+R4           -1844368.167 3688790.334 -        0 3688790.340 -        0 3689071.695 -        0
+LG+R5           -1844363.618 3688785.236 -        0 3688785.243 -        0 3689087.439 -        0
+LG+R3           -1844397.519 3688845.038 -        0 3688845.043 -        0 3689105.557 -        0
+FLU+R4          -1844723.002 3689500.004 -        0 3689500.010 -        0 3689781.365 -        0
+Dayhoff+R4      -1845202.816 3690459.632 -        0 3690459.638 -        0 3690740.993 -        0
+DCMut+R4        -1845372.870 3690799.740 -        0 3690799.746 -        0 3691081.101 -        0
+LG+I+G4         -1845971.154 3691988.308 -        0 3691988.312 -        0 3692227.986 -        0
+mtMAM+F+R4      -1846282.026 3692656.052 -        0 3692656.069 -        0 3693135.408 -        0
+cpREV+R4        -1846439.241 3692932.482 -        0 3692932.488 -        0 3693213.843 -        0
+LG+R2           -1846723.770 3693493.540 -        0 3693493.544 -        0 3693733.218 -        0
+LG+G4           -1846735.202 3693514.404 -        0 3693514.408 -        0 3693743.661 -        0
+rtREV+F+R4      -1848358.071 3696808.142 -        0 3696808.159 -        0 3697287.498 -        0
+mtZOA+F+R4      -1849921.056 3699934.112 -        0 3699934.129 -        0 3700413.468 -        0
+PMB+F+R4        -1855622.171 3711336.342 -        0 3711336.359 -        0 3711815.698 -        0
+LG+I            -1856495.935 3713035.870 -        0 3713035.874 -        0 3713265.127 -        0
+Blosum62+F+R4   -1858364.858 3716821.716 -        0 3716821.733 -        0 3717301.072 -        0
+PMB+R4          -1860906.545 3721867.090 -        0 3721867.096 -        0 3722148.451 -        0
+rtREV+R4        -1864763.005 3729580.010 -        0 3729580.016 -        0 3729861.371 -        0
+Blosum62+R4     -1868367.799 3736789.598 -        0 3736789.604 -        0 3737070.959 -        0
+mtART+F+R4      -1877248.819 3754589.638 -        0 3754589.655 -        0 3755068.994 -        0
+HIVw+R4         -1878512.367 3757078.734 -        0 3757078.740 -        0 3757360.095 -        0
+LG              -1907274.455 3814590.910 -        0 3814590.914 -        0 3814809.746 -        0
+mtVer+R4        -1908529.849 3817113.698 -        0 3817113.704 -        0 3817395.059 -        0
+mtZOA+R4        -1913145.524 3826345.048 -        0 3826345.054 -        0 3826626.409 -        0
+mtMet+R4        -1917599.670 3835253.340 -        0 3835253.346 -        0 3835534.701 -        0
+mtREV+R4        -1918176.734 3836407.468 -        0 3836407.474 -        0 3836688.829 -        0
+mtMAM+R4        -1930557.545 3861169.090 -        0 3861169.096 -        0 3861450.451 -        0
+mtInv+R4        -1952051.464 3904156.928 -        0 3904156.934 -        0 3904438.289 -        0
+mtART+R4        -1961546.267 3923146.534 -        0 3923146.540 -        0 3923427.895 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: JTT+F+R4
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.0763
+  pi(R) = 0.0605
+  pi(N) = 0.0335
+  pi(D) = 0.0458
+  pi(C) = 0.0236
+  pi(Q) = 0.0436
+  pi(E) = 0.0645
+  pi(G) = 0.0685
+  pi(H) = 0.0254
+  pi(I) = 0.0433
+  pi(L) = 0.1064
+  pi(K) = 0.0522
+  pi(M) = 0.0222
+  pi(F) = 0.0401
+  pi(P) = 0.0613
+  pi(S) = 0.0774
+  pi(T) = 0.0495
+  pi(W) = 0.0139
+  pi(Y) = 0.0295
+  pi(V) = 0.0625
+
+Model of rate heterogeneity: FreeRate with 4 categories
+Site proportion and rates:  (0.3980,0.0487) (0.3384,0.5163) (0.2239,2.4019) (0.0397,6.7528)
+
+ Category  Relative_rate  Proportion
+  1         0.0487         0.3980
+  2         0.5163         0.3384
+  3         2.4019         0.2239
+  4         6.7528         0.0397
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -1807658.3310 (s.e. 3018.6399)
+Unconstrained log-likelihood (without tree): -1627157.7696
+Number of free parameters (#branches + #model parameters): 46
+Akaike information criterion (AIC) score: 3615408.6620
+Corrected Akaike information criterion (AICc) score: 3615408.6794
+Bayesian information criterion (BIC) score: 3615888.0177
+
+Total tree length (sum of branch lengths): 1.0138
+Sum of internal branch lengths: 0.2696 (26.5982% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Ornithorhynchus_anatinus' is drawn at root
+Numbers in parentheses are SH-aLRT support (%) / aBayes support
+
+                                    +-------Canis_lupus_familiaris
+                                +---| (100/1)
+                                |   +-----Felis_catus
+                             +--| (100/1)
+                             |  |  +---------Equus_caballus
+                             |  +--| (93.8/1)
+                             |     |   +---------Ovis_aries
+                             |     +---| (100/1)
+                             |         +------Physeter_catodon
+                          +--| (100/1)
+                          |  +-----------------Myotis_lucifugus
++-------------------------| (100/1)
+|                         |  +----------Macaca_mulatta
+|                         +--| (100/1)
+|                            |  +------------Marmota_marmota
+|                            +--| (100/1)
+|                               |                      +--Mus_musculus
+|                               +----------------------| (100/1)
+|                                                      +--Mus_spretus
+|
++-----------------------------------------------------------Ornithorhynchus_anatinus
+|
++-------------------------------Vombatus_ursinus
+
+Tree in newick format:
+
+(((((Canis_lupus_familiaris:0.0351351599,Felis_catus:0.0284810942)100/1:0.0165267398,(Equus_caballus:0.0420409248,(Ovis_aries:0.0424951506,Physeter_catodon:0.0321007947)100/1:0.0185261172)93.8/1:0.0021376670)100/1:0.0024965520,Myotis_lucifugus:0.0774733278)100/1:0.0073771566,(Macaca_mulatta:0.0485064840,(Marmota_marmota:0.0535889359,(Mus_musculus:0.0024346116,Mus_spretus:0.0036278477)100/1:0.0940760288)100/1:0.0132996807)100/1:0.0071268320)100/1:0.1080781129,Ornithorhynchus_anatinus:0.2446635372,Vombatus_ursinus:0.1335792011);
+
+TIME STAMP
+----------
+
+Date and time: Tue Oct 10 04:58:47 2023
+Total CPU time used: 7415.3453 seconds (2h:3m:35s)
+Total wall-clock time used: 635.78926 seconds (0h:10m:35s)
+
